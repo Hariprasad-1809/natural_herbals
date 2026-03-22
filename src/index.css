@@ -1,0 +1,36 @@
+:root {
+  --color-primary-green: #1D9E75;
+  --color-deep-green: #085041;
+  --color-warm-gold: #EF9F27;
+  --color-soft-cream: #F1EFE8;
+  --color-white: #FFFFFF;
+  --font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-soft-cream);
+  color: var(--color-deep-green);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base Link & Button Resets */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}

@@ -1,0 +1,148 @@
+.book-page {
+  padding: 4rem 2rem;
+  background-color: var(--color-soft-cream);
+  min-height: calc(100vh - 200px);
+}
+
+.book-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(8, 80, 65, 0.08);
+  padding: 3rem;
+  border-top: 6px solid var(--color-primary-green);
+}
+
+.book-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.book-header h1 {
+  font-size: 2.5rem;
+  color: var(--color-deep-green);
+  margin-bottom: 0.5rem;
+}
+
+.book-header p {
+  color: #556b62;
+  font-size: 1.1rem;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+  color: var(--color-deep-green);
+  font-size: 0.95rem;
+}
+
+input, select, textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #f9f9f9;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-primary-green);
+  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.1);
+  background-color: var(--color-white);
+}
+
+input:disabled, select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.125rem;
+}
+
+.booking-success {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-primary-green);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 20px rgba(29, 158, 117, 0.2);
+}
+
+.booking-success h2 {
+  color: var(--color-deep-green);
+  margin-bottom: 1rem;
+}
+
+.booking-success p {
+  color: #556b62;
+  margin-bottom: 2rem;
+}
+
+.whatsapp-notice {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: rgba(37, 211, 102, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #25D366;
+}
+
+.wa-icon-wrapper {
+  background-color: #25D366;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+}
+
+.whatsapp-notice p {
+  color: var(--color-deep-green);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .book-container {
+    padding: 2rem 1.5rem;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

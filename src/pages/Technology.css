@@ -1,0 +1,146 @@
+.technology-page {
+  padding-bottom: 4rem;
+}
+
+.tech-hero {
+  background-color: var(--color-deep-green);
+  color: var(--color-white);
+  text-align: center;
+  padding: 6rem 2rem;
+  background-image: radial-gradient(circle at 80% 20%, rgba(29, 158, 117, 0.4) 0%, transparent 40%);
+}
+
+.tech-hero h1 {
+  font-size: 3rem;
+  color: var(--color-warm-gold);
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech-hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+.tech-features {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.feature-block {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.feature-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(8, 80, 65, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.feature-image:hover {
+  transform: translateY(-10px);
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h2 {
+  font-size: 2.25rem;
+  color: var(--color-deep-green);
+  margin-bottom: 1.5rem;
+}
+
+.feature-text p {
+  font-size: 1.125rem;
+  color: #445950;
+  line-height: 1.8;
+}
+
+.tech-stack {
+  background-color: var(--color-white);
+  padding: 5rem 2rem;
+  text-align: center;
+  box-shadow: 0 -10px 40px rgba(8, 80, 65, 0.03);
+}
+
+.tech-stack h2 {
+  font-size: 2rem;
+  color: var(--color-deep-green);
+  margin-bottom: 3rem;
+}
+
+.badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.badge {
+  background-color: rgba(29, 158, 117, 0.1);
+  color: var(--color-primary-green);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border: 1px solid rgba(29, 158, 117, 0.2);
+  transition: all 0.2s;
+}
+
+.badge:hover {
+  background-color: var(--color-primary-green);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+.tech-cta {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: var(--color-soft-cream);
+}
+
+.tech-cta h2 {
+  font-size: 2rem;
+  color: var(--color-deep-green);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .feature-block, .feature-block.reverse {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-hero h1 {
+    font-size: 2.25rem;
+  }
+}
